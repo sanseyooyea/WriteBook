@@ -1,0 +1,17 @@
+name: WriteBook
+version: 0.1.4
+main: maxmc.company.writebook.writebook.WriteBook
+description: A Plugin That Can Write Book By Command
+authors: [sanseyooyea]
+commands:
+  write:
+    description: The plugin writebook's command
+    usage: /write help
+    permission: WriteBook.admin
+permissions:
+  WriteBook:
+    description: Main Permission
+    children:
+      admin:
+        default: op
+        description: Permisson to write book
